@@ -1,6 +1,6 @@
 # WebP Converter 3000
 
-WebP Converter 3000 is a no-nonsense web-based tool for converting your images to the WebP format. All processing happens locally on your machine, ensuring your images never leave your device. We simply host the app.
+WebP Converter 3000 is a no-nonsense web-based tool for converting your images to the WebP format. All processing happens locally on your machine, ensuring your images never leave your device.
 
 ## Features
 - Supports common image formats: **JPEG, PNG, GIF, BMP, WebP, SVG**
