@@ -1,0 +1,110 @@
+html, body {
+    background-color: #ffb6c1;
+    font-family: "Comic Sans MS", sans-serif;
+    height: 100%;
+    margin: 0;
+}
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffc0cb;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #ffc0cb;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.footer a {
+    color: #00d1b2;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.options-panel {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.options-panel label {
+    font-size: 1rem;
+    color: #333;
+}
+.header h1 {
+  font-size: 3rem;
+  color: #333;
+}
+.header p {
+  font-size: 1.4rem;
+  color: #666;
+}
+.container {
+  margin-top: 50px;
+}
+.upload,
+.download {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00d1b2;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 20px;
+  min-height: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.download h2 {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #cecece;
+}
+.is-hidden {
+  display: none;
+}
+.button {
+  margin-top: 10px;
+}
+/* Hover effect for upload icon */
+#upload-section svg:hover {
+    color: #00d1b2;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+#downloadButton svg {
+  margin-right: 5px;
+}
+/* Hover effect for the download button */
+#downloadButton:hover {
+    background-color: #00b89c;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Checkbox hover */
+.options-panel label:hover {
+    color: #00b89c;
+    cursor: pointer;
+}
+
+.info-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #333;
+}

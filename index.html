@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebP Converter 3000</title>
+    <meta name="description" content="Convert images to WebP format locally on your machine. Quick, secure, and easy to use.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>WebP Converter 3000</h1>
+      <p>The no-nonsense WebP converter. Images are processed locally on your machine and never leave it. We simply host the app.</p>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <!-- Upload Column -->
+        <div class="column is-half upload" id="dropZone">
+          <div id="upload-section">
+            <p class="has-text-centered">
+            <i class="fas fa-cloud-upload-alt fa-3x"></i>
+            </p>
+            <p class="has-text-centered">Drop an image here or click to upload</p>
+            <input type="file" id="imageInput" accept="image/*" class="is-hidden">
+          </div>
+          <div class="options-panel">
+            <label class="checkbox">
+              <input type="checkbox" id="autoDownload" checked>
+              Auto-download converted image
+            </label>
+          </div>
+          <div class="info-box notification is-info">
+            <p>Supported formats: <strong>JPEG, PNG, GIF, BMP, WebP, SVG</strong></p>
+          </div>
+        </div>
+
+        <!-- Output Column -->
+        <div class="column is-half download">
+          <h2>WebP image will show up here</h2>
+          <div id="processing-section" class="is-hidden">
+            <p class="has-text-centered">
+            <i class="fas fa-circle-notch fa-spin fa-3x"></i>
+            </p>
+            <p class="has-text-centered">Processing your image...</p>
+          </div>
+          <div id="output-section" class="is-hidden">
+            <a id="downloadLink" href="#" download>
+              <img id="outputImage" alt="Converted WebP" style="max-width: 100%; border-radius: 8px;">
+            </a>
+            <button class="button is-link" id="downloadButton">
+              <i class="fas fa-download"></i> Download Converted Image
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Made with ❤️  by <a href="https://www.adamenger.com">atom</a></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
